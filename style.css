@@ -1,0 +1,58 @@
+:root {
+    --bg-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.header-container {
+    display: flex;
+    /* border: 2px solid; */
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+
+
+nav.header-navigator-container ul.navigator-list li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 1em;
+}
+
+ul.navigator-list li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.4s ease-in-out;
+}
+
+ul.navigator-list a#nav-home {
+    color: var(--bg-color);
+}
+
+ul.navigator-list a:hover {
+    color: red;
+}
+
+main.main-container {
+    margin-top: 5%; 
+    /* border: 1px solid; */
+}
+
+.main-container-section {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container-section .about-discription {
+    width: 70%;
+}
+
+.main-container-section img.profile-photo {
+    width: 200px;
+}
